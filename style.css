@@ -1,36 +1,38 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
 body {
-  background-color: #f8f9fa;
+  background-color: var(--ctp-mocha-base);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: var(--ctp-mocha-text);
 }
 
 h1 {
   text-align: center;
-  color: #2c3e50;
+  color: var(--ctp-mocha-text);
   margin-top: 20px;
 }
 
 .recipe-link {
-  color: #3498db;
+  color: var(--ctp-mocha-green);
   font-size: 20px;
   text-decoration: none;
   display: block;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--ctp-mocha-surface2);
   margin: 10px auto;
   width: 80%;
   max-width: 600px;
   text-align: center;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--ctp-mocha-base);
   transition: background-color 0.3s, color 0.3s;
 }
 
 .recipe-link:hover {
-  background-color: #3498db;
-  color: #fff;
+  background-color: var(--ctp-mocha-green);
+  color: var(--ctp-mocha-base);
 }
 
 ul {
@@ -46,13 +48,15 @@ li {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--ctp-mocha-base);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 20px;
 }
 
 .recipe-page h2 {
-  color: #2c3e50;
+  color: var(--ctp-mocha-green);
   margin-top: 20px;
 }
 
